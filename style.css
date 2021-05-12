@@ -241,6 +241,7 @@ footer .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .item {
@@ -301,4 +302,65 @@ footer .logo {
 
 .item:hover .item-img {
   display: none;
+}
+
+.item-hover {
+  display: none;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------- SMARTPHONE DESIGN  -------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 800px) {
+  .number {
+    display: none;
+  }
+  .icon {
+    display: none;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .info {
+    display: none;
+  }
+
+  #about-us {
+    flex-direction: column;
+    margin-bottom: 7%;
+  }
+
+  .item:hover .item-hover {
+    display: none;
+  }
+
+  .item:hover .item-img {
+    display: flex;
+  }
+
+  .item:hover {
+    border: none;
+  }
+  .list-items {
+    flex-direction: column;
+  }
+
+  .item {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+  }
+
+  .link {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
