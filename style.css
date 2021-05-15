@@ -326,6 +326,11 @@ footer .logo {
     visibility: hidden;
   }
 
+  #latest-news {
+    padding: 0 15vw;
+    padding-bottom: 10vh;
+  }
+
   footer {
     padding: 0 1vw;
   }
@@ -405,6 +410,11 @@ footer .logo {
 
   .menu p span {
     visibility: hidden;
+  }
+
+  #latest-news {
+    padding: 0 15vw;
+    padding-bottom: 10vh;
   }
 
   footer {
