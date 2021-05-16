@@ -98,8 +98,8 @@
     top: 20vh;
   }
 
-  #precedent,
-  #suivant {
+  #previous,
+  #next {
     font-size: 3rem;
   }
 }

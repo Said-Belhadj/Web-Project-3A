@@ -110,8 +110,8 @@
     top: 40%;
   }
 
-  #precedent,
-  #suivant {
+  #previous,
+  #next {
     font-size: 3rem;
   }
 }
