@@ -207,6 +207,118 @@ header .second-part {
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------  PROJECT  -------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+#project {
+  padding-bottom: 25vh;
+}
+
+#project-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15vw;
+  font-size: 1.6rem;
+  padding-bottom: 6vh;
+}
+
+#project-dot {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.7rem;
+  color: lightgray;
+}
+
+#list-project {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  position: relative;
+  width: 420px;
+  height: 550px;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.project-item .project-text-hover {
+  display: none;
+}
+
+.project-item img {
+  width: 100%;
+  position: relative;
+}
+
+#project-title ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+#project-title ul li {
+  padding-left: 1rem;
+}
+
+.project-info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: white;
+  font-size: 0.7rem;
+  width: 100%;
+  height: 100%;
+  padding-left: 10%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.project-info h6 {
+  width: 60%;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
+.project-info p {
+  margin-bottom: 10%;
+}
+
+.project-info .project-text-hover {
+  width: 80%;
+  font-size: 1rem;
+  margin-top: -15%;
+}
+
+.project-item:hover .project-info {
+  background-color: #cde002d6;
+  justify-content: space-around;
+  color: black;
+}
+
+.project-item:hover .project-text-hover {
+  display: block;
+}
+
+.project-item:hover .project-info h6 {
+  padding-bottom: 0rem;
+}
+
+.project-item:hover .project-info p {
+  margin-bottom: 0;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------- CUSTOMER --------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------------------------------------------------------------- */
 #customer-parrent {
@@ -225,14 +337,14 @@ header .second-part {
   padding-bottom: 5vh;
 }
 
-.customer-title {
+#customer-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 4vh 0;
 }
 
-.customer-title h1 {
+#customer-title h1 {
   font-size: 1.6rem;
 }
 
