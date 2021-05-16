@@ -1,0 +1,117 @@
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------- TABLET DESIGN  -------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media (min-width: 768px) and (max-width: 1270px) {
+  body {
+    padding: 0 0;
+    margin: 0 0;
+  }
+
+  header {
+    padding: 0 2vw;
+  }
+
+  .menu p span {
+    visibility: hidden;
+  }
+
+  .customer-list-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .customer-item {
+    width: 100%;
+    margin-bottom: 4vh;
+  }
+
+  #latest-news {
+    padding: 0 15vw;
+    padding-bottom: 10vh;
+  }
+
+  footer {
+    padding: 0 1vw;
+  }
+
+  .number {
+    display: none;
+  }
+  .icon {
+    display: none;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .info {
+    position: absolute;
+    top: 9%;
+    left: 20%;
+    color: white;
+    width: 30%;
+  }
+  #home-text {
+    position: relative;
+    padding-top: 1.6rem;
+    margin-left: 2.4rem;
+    line-height: 2.6rem;
+    z-index: 2;
+  }
+
+  #home-title {
+    font-size: 3.2rem;
+  }
+
+  #about-us {
+    flex-direction: column;
+    margin-bottom: 7%;
+  }
+
+  #about-us-img img {
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .item:hover .item-hover {
+    display: none;
+  }
+
+  .item:hover .item-img {
+    display: flex;
+  }
+
+  .item:hover {
+    border: none;
+  }
+
+  .item {
+    width: 30%;
+    height: auto;
+    margin-bottom: 5%;
+  }
+
+  .link {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #slider {
+    top: 40%;
+  }
+
+  #precedent,
+  #suivant {
+    font-size: 3rem;
+  }
+}

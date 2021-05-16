@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/03a5d9699e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="smartphone.css">
+    <script src="script.js"></script>
     <title>Projet 3A</title>
 </head>
 <body>
@@ -40,7 +43,12 @@
     </header>
     <main>
         <section id="home">
-            <img src="img/home.jpeg" alt="">
+            <img src="img/home.jpeg" alt="" id="slide">
+            <div id="slider">
+                <div id="precedent" onclick="ChangeSlide(-1)"><i class="fas fa-chevron-left"></i></div>
+                <div id="suivant" onclick="ChangeSlide(1)"><i class="fas fa-chevron-right"></i></div>   
+            </div>
+
             <div class="info">
                 <div id="border">
                 </div>
@@ -60,6 +68,49 @@
             <div id="about-us-img">
                 <img src="img/about-us-img.jpeg" alt="">
             </div>
+        </section>
+        <section id="customer-parrent">
+            <section id="customer">
+                <div class="customer-title">
+                    <h1>From Great Our Clients</h1>
+                    <p><i class="fas fa-chevron-left"></i>    <i class="fas fa-chevron-right"></i></p>
+                </div>
+                <div class="customer-list-items">
+                    <article class="customer-item">
+                        <div class="customer-item-img">
+                            <img src="https://randomuser.me/api/portraits/lego/4.jpg" alt="">
+                        </div>
+                        <div class="customer-info">
+                            <div class="customer-item-icon"><i class="fas fa-quote-right"></i></div>
+                            <p class="customer-item-job"><strong>Saïd BELHADJ</strong>/ CEO at his bedroom</p>
+                            <p class="customer-item-description">Lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+                                laboriosam. atur
+                                eos? Lorem, ipsum dolor sit amet consectetur adipisicing elit.dae?
+                            </p>
+                        </div>
+                    </article>
+                    <article class="customer-item">
+                        <div class="customer-item-img">
+                            <img src="https://randomuser.me/api/portraits/lego/5.jpg" alt="">
+                        </div>
+                        <div class="customer-info">
+                            <div class="customer-item-icon"><i class="fas fa-quote-right"></i></div>
+                            <p class="customer-item-job"><strong>Saïd BELHADJ</strong>/ CEO at his bedroom</p>
+                            <p class="customer-item-description">Lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+                                laboriosam. atur
+                                eos? Lorem, ipsum dolor sit amet consectetur adipisicing elit.dae?
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="partner">
+                    <i class="fab fa-angrycreative"></i>
+                    <i class="fab fa-aws"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-ebay"></i>
+                    <i class="fab fa-dhl"></i>
+                </div>
+            </section>
         </section>
         <section id="latest-news">
             <div class="latest-news-title">

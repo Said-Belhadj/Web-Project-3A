@@ -110,7 +110,6 @@ header .second-part {
 #home img {
   display: block;
   width: 100%;
-  height: auto;
   filter: grayscale(60%);
 }
 
@@ -143,6 +142,30 @@ header .second-part {
   min-width: 220px;
 }
 
+#slider {
+  position: absolute;
+  top: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#precedent,
+#suivant {
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+  opacity: 0.5;
+  font-size: 4rem;
+  color: rgba(220, 220, 220, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+
+#slider:hover #precedent,
+#slider:hover #suivant {
+  opacity: 1;
+}
+
 /* --------------------------------------------------------------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------- ABOUT-US -------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -150,7 +173,7 @@ header .second-part {
 #about-us {
   display: flex;
   padding: 15vh 14.5vw;
-  padding-bottom: 0;
+  padding-bottom: 10vh;
 }
 
 #about-us-article {
@@ -184,32 +207,72 @@ header .second-part {
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------  FOOTER  -------------------------------------------------------------------- */
+/* --------------------------------------------------------- CUSTOMER --------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------------------------------------------------------------- */
+#customer-parrent {
+  background-image: radial-gradient(rgb(209, 203, 203) 1px, transparent 1px);
+  background-size: 10px 10px;
+}
 
-footer {
+.customer-list-items {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  padding-bottom: 10vh;
-  padding-top: 10vh;
-}
-
-footer .logo {
-  display: flex;
   align-items: center;
-  line-height: 1.1rem;
 }
 
-.link ul {
-  list-style: none;
-  font-size: 0.7rem;
+#customer {
+  padding: 0 15vw;
+  padding-bottom: 5vh;
 }
 
-#footer-separator {
-  height: 1px;
-  background-color: #ddd;
-  border: none;
+.customer-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4vh 0;
+}
+
+.customer-title h1 {
+  font-size: 1.6rem;
+}
+
+.customer-item {
+  background-color: #fff;
+  width: 45%;
+  padding: 0 2%;
+  padding-bottom: 1%;
+}
+
+.customer-item-img {
+  width: 16%;
+}
+
+.customer-item-img img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.customer-item-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.customer-item-icon i {
+  font-size: 1.3rem;
+  color: #cee002;
+}
+
+.customer-item-description {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.partner {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.5rem;
+  padding: 7vh 0;
+  opacity: 0.5;
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -218,7 +281,7 @@ footer .logo {
 
 #latest-news {
   padding: 0 15vw;
-  padding-bottom: 30vh;
+  padding-bottom: 10vh;
 }
 
 .latest-news-title {
@@ -296,6 +359,8 @@ footer .logo {
 
 .item:hover .item-hover {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 80%;
   height: 100%;
 }
@@ -309,188 +374,30 @@ footer .logo {
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------- */
-/* ----------------------------------------------------------- SMARTPHONE DESIGN  -------------------------------------------------------------- */
+/* ---------------------------------------------------------------  FOOTER  -------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------------------------------------------------------------- */
 
-@media (max-width: 767px) {
-  body {
-    padding: 0 0;
-    margin: 0 0;
-  }
-
-  header {
-    padding: 0 2vw;
-  }
-
-  .menu p span {
-    visibility: hidden;
-  }
-
-  #latest-news {
-    padding: 0 15vw;
-    padding-bottom: 10vh;
-  }
-
-  footer {
-    padding: 0 1vw;
-  }
-
-  .number {
-    display: none;
-  }
-  .icon {
-    display: none;
-  }
-
-  .separator {
-    display: none;
-  }
-
-  .info {
-    display: none;
-  }
-
-  #about-us {
-    flex-direction: column;
-    margin-bottom: 7%;
-  }
-
-  #about-us-img img {
-    display: block;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .item:hover .item-hover {
-    display: none;
-  }
-
-  .item:hover .item-img {
-    display: flex;
-  }
-
-  .item:hover {
-    border: none;
-  }
-  .list-items {
-    flex-direction: column;
-  }
-
-  .item {
-    width: 100%;
-    height: auto;
-    margin-bottom: 5%;
-  }
-
-  .link {
-    display: none;
-  }
-
-  footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 10vh;
+  padding-top: 10vh;
 }
 
-/* --------------------------------------------------------------------------------------------------------------------------------------------- */
-/* ----------------------------------------------------------- TABLET DESIGN  -------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+footer .logo {
+  display: flex;
+  align-items: center;
+  line-height: 1.1rem;
+}
 
-@media (min-width: 768px) and (max-width: 1270px) {
-  body {
-    padding: 0 0;
-    margin: 0 0;
-  }
+.link ul {
+  list-style: none;
+  font-size: 0.7rem;
+}
 
-  header {
-    padding: 0 2vw;
-  }
-
-  .menu p span {
-    visibility: hidden;
-  }
-
-  #latest-news {
-    padding: 0 15vw;
-    padding-bottom: 10vh;
-  }
-
-  footer {
-    padding: 0 1vw;
-  }
-
-  .number {
-    display: none;
-  }
-  .icon {
-    display: none;
-  }
-
-  .separator {
-    display: none;
-  }
-
-  .info {
-    position: absolute;
-    top: 9%;
-    left: 20%;
-    color: white;
-    width: 30%;
-  }
-  #home-text {
-    position: relative;
-    padding-top: 1.6rem;
-    margin-left: 2.4rem;
-    line-height: 2.6rem;
-    z-index: 2;
-  }
-
-  #home-title {
-    font-size: 3.2rem;
-  }
-
-  #about-us {
-    flex-direction: column;
-    margin-bottom: 7%;
-  }
-
-  #about-us-img img {
-    display: block;
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .item:hover .item-hover {
-    display: none;
-  }
-
-  .item:hover .item-img {
-    display: flex;
-  }
-
-  .item:hover {
-    border: none;
-  }
-  .list-items {
-    /* flex-direction: column; */
-  }
-
-  .item {
-    width: 30%;
-    height: auto;
-    margin-bottom: 5%;
-  }
-
-  .link {
-    display: none;
-  }
-
-  footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+#footer-separator {
+  height: 1px;
+  background-color: #ddd;
+  border: none;
 }

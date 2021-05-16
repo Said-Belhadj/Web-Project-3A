@@ -1,0 +1,105 @@
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------- SMARTPHONE DESIGN  -------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 767px) {
+  body {
+    padding: 0 0;
+    margin: 0 0;
+  }
+
+  header {
+    padding: 0 2vw;
+  }
+
+  .menu p span {
+    visibility: hidden;
+  }
+
+  .customer-list-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .customer-item {
+    width: 100%;
+    margin-bottom: 4vh;
+  }
+
+  #latest-news {
+    padding: 0 15vw;
+    padding-bottom: 10vh;
+  }
+
+  footer {
+    padding: 0 1vw;
+  }
+
+  .number {
+    display: none;
+  }
+  .icon {
+    display: none;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .info {
+    display: none;
+  }
+
+  #about-us {
+    flex-direction: column;
+    margin-bottom: 7%;
+  }
+
+  #about-us-img img {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .item:hover .item-hover {
+    display: none;
+  }
+
+  .item:hover .item-img {
+    display: flex;
+  }
+
+  .item:hover {
+    border: none;
+  }
+  .list-items {
+    flex-direction: column;
+  }
+
+  .item {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+  }
+
+  .link {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #slider {
+    top: 20vh;
+  }
+
+  #precedent,
+  #suivant {
+    font-size: 3rem;
+  }
+}
