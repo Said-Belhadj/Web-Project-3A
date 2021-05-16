@@ -63,6 +63,10 @@
     margin-right: auto;
   }
 
+  .customer-title p {
+    display: none;
+  }
+
   .item:hover .item-hover {
     display: none;
   }
