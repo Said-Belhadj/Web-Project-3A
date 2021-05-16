@@ -6,11 +6,11 @@ var slide = new Array(
 );
 var num = 0;
 
-function ChangeSlide(sens) {
-  num = num + sens;
+function ChangeSlide(direction) {
+  num = num + direction;
   if (num < 0) num = slide.length - 1;
   if (num > slide.length - 1) num = 0;
   document.getElementById("slide").src = slide[num];
 }
 
-setInterval("ChangeSlide(1)", 4000);
+setInterval("ChangeSlide(1)", 7000);

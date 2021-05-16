@@ -150,19 +150,19 @@ header .second-part {
   justify-content: space-between;
 }
 
-#precedent,
-#suivant {
+#previous,
+#next {
   cursor: pointer;
   transition: opacity 0.4s ease;
   opacity: 0.5;
   font-size: 4rem;
-  color: rgba(220, 220, 220, 0.8);
-  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
 }
 
-#slider:hover #precedent,
-#slider:hover #suivant {
+#slider:hover #previous,
+#slider:hover #next {
   opacity: 1;
 }
 
