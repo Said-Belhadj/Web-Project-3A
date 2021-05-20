@@ -31,7 +31,7 @@ The only dynamic part of the page will be having a slider instead of a static im
 * The dynamic slider using javascript
 * Code clarity 
 
-You will need to upload the solution to github and share the repository link with me, you are free to use the fonts, the text and the images that you won’t and you will not be judged on that.
+💬 You will need to upload the solution to github and share the repository link with me, you are free to use the fonts, the text and the images that you won’t and you will not be judged on that.
 
 ⚠️⚠ The usage of any css or javascript libraries or frameworks is forbidden. ⚠️⚠️
 
